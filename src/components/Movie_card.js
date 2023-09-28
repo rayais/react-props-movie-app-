@@ -3,14 +3,14 @@ import { Button, Card } from 'react-bootstrap'
 import ReactStars from 'react-stars';
 
 function Movie_card({props}) {
-    console.log(props);
+   
   return (
     <>
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem'}}>
       <Card.Img variant="top" src={props.img} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
-        <Card.Text>
+        <Card.Text style={{}}>
           description : {props.description}
         </Card.Text>
         

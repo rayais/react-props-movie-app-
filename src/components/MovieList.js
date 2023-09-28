@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Movie_card from './Movie_card'
 //import Movie_card from './Movie_card'
 
 
 function MovieList({movies}) {
-    console.log(movies)
+
+    
     
   return (
     <div style={{display:"flex",justifyContent: "space-around"}} >
-        {movies.map(movie=>
-             <Movie_card props={movie}/>
+        {movies.map((movie, index)=>
+             {return (<Movie_card props={movie} key={index}/>)}
         )}
     </div>
   )
