@@ -3,7 +3,11 @@ import MovieList from './components/MovieList';
 import Nave from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data1 from './components/Data'
-import {  useState } from 'react';
+
+import { Route, Routes } from 'react-router-dom';
+import FilterName from './components/FilterName';
+import { useState } from 'react';
+import FilterRate from './components/FilterRate';
 
 
 function App() {
@@ -12,17 +16,24 @@ function App() {
   const [data,setData]=useState(data1)
  
  
-  return (
-    sho?(<div className="App" style={{filter:"blur(4px)"}}>
+  return (<>
+    
     <Nave setSho={setSho}setData={setData} data={data}/>
+    <Routes>
+      <Route path='/NameFilter' element={<FilterName movies={data}/>}/>
+      <Route path='/Rankrank' element={<FilterRate movies={data}/>}/>
+      <Route path='/' element={sho?(<div className="App" style={{filter:"blur(4px)"}}>
+
     <MovieList movies={data}/>
   </div>)
     :
     (<div className="App">
-      <Nave setSho={setSho}setData={setData} data={data}/>
+      
       <MovieList movies={data}/>
-    </div>)
-    
+    </div>)}/>
+
+    </Routes>
+    </>
   );
 }
 

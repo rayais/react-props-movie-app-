@@ -3,13 +3,13 @@ const data=[
         title:"Titanic",
         img:"https://fr.web.img6.acsta.net/c_310_420/pictures/23/01/10/16/06/0622119.jpg",
         description:"Southampton, 10 avril 1912. Le paquebot le plus grand et le plus moderne du monde, réputé pour son insubmersibilité, le Titanic, appareille pour son premier voyage. Quatre jours plus tard, il heurte un iceberg. A son bord, un artiste pauvre et une grande bourgeoise tombent amoureux",
-        rating:2,
+        rating:1.8,
     },
     {
         title:"Gladiator",
         img:"https://www.adamconcerts.com/wp-content/uploads/sites/2/2021/05/ND23-AIX-2.jpg",
         description:"Le général romain Maximus est le plus fidèle soutien de l'empereur Marc Aurèle, qu'il a conduit de victoire en victoire avec une bravoure et un dévouement exemplaires. Jaloux du prestige de Maximus, et plus encore de l'amour que lui voue l'empereur, le fils de MarcAurèle, Commode, s'arroge brutalement le pouvoir, puis ordonne l'arrestation du général et son exécution. Maximus échappe à ses assassins mais ne peut empêcher le massacre de sa famille. Capturé par un marchand d'esclaves, il devient gladiateur et prépare sa vengeance.",
-        rating:2.5,
+        rating:3.5,
     },
     {
         title:"Avatar",
